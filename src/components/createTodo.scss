@@ -1,0 +1,29 @@
+.createTodo {
+  display: flex;
+
+  padding: 10px;
+
+  color: #3D82EB;
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    border: 1px solid #3D82EB;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #3D82EB;
+      color: #fff;
+    }
+  }
+  &-title {}
+}

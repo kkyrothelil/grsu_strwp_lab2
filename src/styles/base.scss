@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+$fontFamily: 'Roboto', 'sans-serif';
+
+body {
+  font-family: $fontFamily;
+}
+
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+._container {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}

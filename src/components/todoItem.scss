@@ -1,0 +1,54 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+  margin-bottom: 10px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  &:hover &-buttonDelete {
+    display: block;
+  }
+
+  &_completed &-text {
+    text-decoration: line-through;
+  }
+  &_removed &-text {
+    color: red;
+  }
+
+  &-checkbox {
+    margin-right: 13px;
+  }
+  &-text {
+    flex: 1 1 auto;
+
+    line-height: 20px;
+  }
+  &-buttonDelete {
+    display: none;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #EB3D3D;
+    border-radius: 50%;
+
+    font-weight: 700;
+    background-color: #fff;
+    color: #EB3D3D;
+    line-height: 17px;
+    transform: all 0.3s ease;
+
+    &:hover {
+      border: 1px solid #fff;
+      background-color: #EB3D3D;
+      color: #fff;
+    }
+  }
+}
