@@ -36,14 +36,18 @@ const CreateTodo = () => {
           </Button>
           <Button variant="primary"
             onClick={() => {
-              const todo = {
-                id: uuidv4(),
-                text: text,
-                status: 'active'
+              if (text.trim().length) {
+                const todo = {
+                  id: uuidv4(),
+                  text: text,
+                  status: 'active'
+                }
+                dispatch(createTodo(todo))
+                handleClose()
+                setText('')
+              } else {
+                alert('Uncorrect input!')
               }
-              dispatch(createTodo(todo))
-              handleClose()
-              setText('')
             }}
           >
             Create
